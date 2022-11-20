@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Temperature Converter</h1>
+<p>Type a value in the Fahrenheit field to convert the value to Celcius:</p>
+Fahrenheit
+<input type="text" id="dauvao">
+<button onclick="temperatureConverter()">Convert</button>
+<p>Celsius: <span id="outputCelsius"></span></p>
+<script>
+    function  temperatureConverter() {
+        let dauvao = document.getElementById("dauvao").value;
+        document.getElementById("outputCelsius").innerHTML = (dauvao-32) / 1.8;
+    }
+</script>
+</body>
+</html>
